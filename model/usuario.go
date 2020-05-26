@@ -1,4 +1,4 @@
-package main
+package model
 
 import "fmt"
 
@@ -9,10 +9,6 @@ type usuario struct {
 	telefono  string
 	mail      string
 	direccion string
-}
-
-func main() {
-	alta("joaquin", "34534534", "34534543", "adsasdasd", "sdaasdasd")
 }
 
 func alta(nombre, dni, telefono, mail, direccion string) {
