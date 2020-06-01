@@ -1,33 +1,31 @@
 package model
 
-import "fmt"
-
 type vino struct {
 	id        int
-	nombre    string
-	resenha      string
-	tipoDeUva  string
-	tipo      string
-	anho string
-	origen string
-	precio float32
-	stock int
+	name      string
+	review    string
+	grapeType string
+	brand     string
+	year      string
+	origin    string
+	price     float32
+	stock     int
 }
 
-func alta(nombre, resenha, tipoDeUva, tipo, anho, origen  string; precio float32; stock int) {
+func addWine(name string, review string, grapeType string, brand string, year string, origin string, price float32, stock int) {
 
 	var vino vino
-	vino.nombre = nombre
-	vino.resenha = resenha
-	vino.tipoDeUva = tipoDeUva
-	vino.tipo = tipo
-	vino.anho = anho
-	vino.origen = origen
-	vino.precio = precio
-	vino.stock =stock
+	vino.name = name
+	vino.review = review
+	vino.grapeType = grapeType
+	vino.brand = brand
+	vino.year = year
+	vino.origin = origin
+	vino.price = price
+	vino.stock = stock
 
 }
 
-func baja(id int) {
+func deleteWine(id int) {
 
 }

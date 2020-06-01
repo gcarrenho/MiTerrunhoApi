@@ -1,29 +1,25 @@
 package model
 
-import "fmt"
-
-type usuario struct {
-	id        int
-	nombre    string
-	dni       string
-	telefono  string
-	mail      string
-	direccion string
+type user struct {
+	id     int
+	name   string
+	dni    string
+	phone  string
+	mail   string
+	adress string
 }
 
-func alta(nombre, dni, telefono, mail, direccion string) {
+func addUser(name, dni, phone, mail, adress string) {
 
-	var usuario usuario
-	usuario.nombre = nombre
-	usuario.dni = dni
-	usuario.telefono = telefono
-	usuario.mail = mail
-	usuario.direccion = direccion
-
-	fmt.Println(usuario)
+	var user user
+	user.name = name
+	user.dni = dni
+	user.phone = phone
+	user.mail = mail
+	user.adress = adress
 
 }
 
-func baja(id int) {
+func deleteUser(id int) {
 
 }
